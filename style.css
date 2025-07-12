@@ -1,0 +1,508 @@
+body {
+    margin: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.menu {
+    /* background-color: bisque; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.menu ul li img {
+    width: 10px;
+    height: 10px;
+    margin-right: 5px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #161183;
+    padding: 20px;
+}
+
+p {
+    line-height: 22px;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    gap: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+
+}
+
+a:hover {
+    color: rgb(135, 126, 126);
+    font-size: 18px;
+}
+
+.bg-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url(images/femmes-afro-americaines-assis-table-pres-document-stylo-figure-marteau.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 670px;
+    padding: 20px;
+}
+
+.bg-container>h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #FFFFFF;
+    font-size: xx-large;
+    font-weight: bold;
+    width: 600px;
+    margin-top: 150px;
+    margin-bottom: 0px;
+    /* text-shadow: 0  0 #161183; */
+    text-shadow: 0px 3px royalblue
+}
+
+.bg-container>p {
+    color: #FFFFFF;
+    width: 700px;
+    font-size: 20px;
+    line-height: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.bg-container button {
+    padding: 20px 30px;
+    background-color: #161183;
+    border-radius: 10px;
+
+}
+
+.section-apropos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 20px;
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.titre {
+    font-size: 50px;
+    color: #161183;
+}
+
+.containers-apropos {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.apropos-img img {
+    width: 600px;
+    height: 500px;
+}
+
+.apropos-text>button {
+    padding: 10px;
+    background-color: #161183;
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    color: #FFFFFF;
+    font-size: 20px;
+}
+
+.stat-section {
+    background-color: #1d1d1f;
+    color: #FFFFFF;
+    height: 200px;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: row;
+    gap: 200px;
+    align-items: center;
+    justify-content: center;
+
+
+
+}
+
+.stat-container {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.stat-container h1 {
+    color: #FFFFFF;
+    font-size: 60px;
+    font-weight: bolder;
+
+}
+
+.section-services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+}
+
+
+.section-team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+}
+
+.team-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+
+}
+
+.employer button img {
+    height: 15px;
+    width: auto;
+
+}
+
+.employer img {
+    height: 250px;
+    width: 330px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 20px 20px 0 0;
+
+}
+
+.employer {
+    border: 1px solid beige;
+    border-radius: 20px;
+    padding-bottom: 15px;
+    box-shadow: 0 4px 8px 0 black;
+
+}
+
+.employer button {
+    display: inline-flex;
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    color: #FFFFFF;
+    background-color: #161183;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: auto;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.employer button:hover {
+    color: orange;
+    background-color: black;
+}
+
+.espace {
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+
+.espace h1 {
+    font-size: larger;
+
+}
+
+
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 40px;
+}
+
+.service {
+  position: relative;
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+
+}
+
+.service:hover {
+  transform: scale(1.03);
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5); /* ombre */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.overlay h2 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.fleche {
+  margin-top: 15px;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  
+}
+
+
+.bg-container-mission {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url(images/vue-face-homme-femme-travaillant-comme-avocats.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 650px;
+    padding: 20px;
+}
+
+.container-mission h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #FFFFFF;
+    font-size: xx-large;
+    font-weight: bold;
+    width: 600px;
+    margin-bottom: 0px;
+    
+}
+.container-mission {
+     margin-top: 250px;
+    box-shadow: 3px 3px 6px 5px grey;
+    padding: 30px
+}
+.container-mission>p {
+    color: #FFFFFF;
+    width: 700px;
+    font-size: 20px;
+    line-height: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.section-contact{
+  
+    background-color: rgba(128, 128, 128, 0.325);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+}
+.contact{
+      display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    justify-content: center;
+    align-items: center;
+}
+.contact-rs img{
+    height: 30px;
+    width: 30px;
+    border-radius: 5px;
+    padding-right: 10px;
+    justify-items: center;
+
+}
+.contact-rs{
+
+    margin-bottom: 30px;
+}
+.contact-form{
+   
+    width: auto;
+
+}
+input {
+  width: 100%;
+  border-radius: 20px;
+
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+
+input[type=text]:focus {
+  border: 3px solid #555;
+}
+
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  resize: none;
+}
+input[type=button], input[type=submit], input[type=reset] {
+  background-color: grey;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius:20px;
+}
+
+
+.item{
+    display: flex ;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    text-align: center;
+}
+.item >img {
+    width: 40px;
+    height: 40px;
+    place-self: center;
+}
+
+.items{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+
+
+}
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #222;
+  color: #fff;
+  padding: 40px;
+  gap: 20px;
+}
+
+.footer-col {
+  flex: 1 1 250px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-logo {
+  width: 120px;
+  margin-bottom: 10px;
+}
+
+.footer-col p {
+  margin: 10px 0;
+  font-size: 0.9rem;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.social-icons a img {
+  width: 40px;
+  margin-right: 10px;
+}
+
+.footer-col h4 {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  display: block;
+}
+
+.footer-col ul li {
+  margin-bottom: 8px;
+}
+
+.footer-col ul li a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.footer-col ul li a:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+
+.newsletter-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.newsletter-form input[type="email"] {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+}
+
+.newsletter-form button {
+  padding: 10px;
+  background-color: #161183;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.newsletter-form button:hover {
+  background-color: #070533;
+}
